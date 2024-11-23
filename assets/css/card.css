@@ -11,6 +11,10 @@
     margin-bottom: 50px;
 }
 
+a {
+    text-decoration-line: none;
+}
+
 #title {
     margin-bottom: 20px;
     font-size: 100px;
