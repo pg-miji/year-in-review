@@ -1,0 +1,74 @@
+@import url("default.css");
+
+#title {
+    font-size: 100px;
+    margin: 30px;
+}
+
+#title span {
+    color: rgba(255, 0, 0, 0.1);
+    background-size: cover;
+    background-image: url("../images/glow.jpg");
+    -webkit-background-clip: text;
+    animation: background-text-animation 15s linear infinite;
+}
+
+@keyframes background-text-animation {
+    0% {
+        background-position: left 0px top 50%;
+    }
+
+    50% {
+        background-position: left 1500px top 50%;
+    }
+
+    100% {
+        background-position: left 0px top 50%;
+    }
+}
+
+img#index {
+    width: 500px;
+}
+
+#message {
+    font-size: 40px;
+    margin: 30px 30px 80px 20px;
+}
+
+#content {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Miniver", serif;
+    width: 90%;
+    font-size: 50px;
+    padding-top: 120px;
+}
+
+.flex_wrap button {
+    background-color: #fdeed0;
+    border-radius: 24px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+        rgba(0, 0, 0, 0.14) 0 6px 10px 0,
+        rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+    color: #3c4043;
+    cursor: pointer;
+    font-family: "Miniver", serif;
+    font-size: 55px;
+    font-weight: 500;
+    height: 110px;
+    padding: 2px 24px;
+    text-align: center;
+    transition: transform 270ms cubic-bezier(0, 0, 0.2, 1);
+}

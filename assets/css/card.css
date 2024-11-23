@@ -1,0 +1,35 @@
+@import url("default.css");
+
+#content {
+    width: 85%;
+    text-align: center;
+    font-size: 50px;
+}
+
+#content img {
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+#title {
+    margin-bottom: 20px;
+    font-size: 100px;
+}
+
+#reading {
+    font-size: 40px;
+}
+
+#advice {
+    text-decoration: underline;
+}
+
+.keyword {
+    font-size: 48px;
+    font-weight: 550;
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}

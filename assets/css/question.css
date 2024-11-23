@@ -1,0 +1,91 @@
+@import url("default.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    flex-direction: column;
+    margin: 0;
+}
+
+#content {
+    position: relative;
+    width: 650px;
+    height: 750px;
+    z-index: 1;
+}
+
+#content img {
+    width: 650px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 100px;
+}
+
+#front {
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+    filter: drop-shadow(5px 5px 5px #303030);
+}
+
+#back {
+    z-index: 1;
+    transform: rotate(-10deg);
+}
+
+#text {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    color: black;
+    font-size: 70px;
+    font-weight: 550;
+    z-index: 3;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#button-container {
+    width: 95%;
+    max-width: 1500px;
+    z-index: 10;
+    position: relative;
+    top: 150px;
+    margin-top: 30%;
+    margin-bottom: 15%;
+    font-size: 50px;
+    padding-top: 100px;
+    font-family: "Miniver", serif;
+}
+
+.flex_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_wrap button {
+    background-color: #fdeed0;
+    border-radius: 24px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+        rgba(0, 0, 0, 0.14) 0 6px 10px 0,
+        rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+    color: #3c4043;
+    cursor: pointer;
+    font-family: "Miniver", serif;
+    font-size: 55px;
+    font-weight: 500;
+    height: 110px;
+    padding: 2px 24px;
+    text-align: center;
+    transition: transform 270ms cubic-bezier(0, 0, 0.2, 1);
+}
